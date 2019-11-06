@@ -1,0 +1,151 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    z-index: 0;
+}
+h1, h2{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+    display: flex;
+    z-index: 1;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align-last: center;
+}
+nav a{
+    font-size: 20px;
+    padding: 0 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.page-1{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/page-1-bg.jpg);
+    background-size: cover;
+}
+.page-2{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/page-2-bg.jpg);
+    background-size: cover;
+}
+.page-3{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/page-3-bg.jpg);
+    background-size: cover;
+}
+.page-content{
+    top: 50%;
+    transform: translate(0, -50%);
+    position: relative;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.heading, .subheading{
+    color: white;
+    text-shadow: 1px 1px 2px black; 
+}
+.page-1 .heading{
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+.page-1 .subheading{
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+
+#footer{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(17, 17, 17);
+    box-shadow: inset 0px 0px 40px rgba(0,0,0,0.4);
+}
+.inner-footer{
+    margin: auto;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-section{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+
+.social-links{
+    margin: 30px 0;
+}
+.social-links a{
+    padding-right: 20px;
+}
+form{
+margin: 40px 0;
+}
+input, textarea, label{
+    margin:0 10px;
+    width: 85%;
+    display: flex;
+    resize: none;
+}
+label{
+    margin: 20px 10px 4px;
+}
+input[type=text], input[type=email], textarea{
+padding: 10px 20px;
+border-radius: 2px;
+border: 1px solid black;
+box-shadow: inset 0px 1px 5px rgb(102, 102, 102);
+}
+textarea{
+    height: 300px;
+}
+input[type=submit]{
+    margin:auto;
+    margin-top: 20px;
+    font-family: monospace;
+    width: 40%;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: coral;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px){
+    .inner-footer{
+        justify-content: left;
+    }
+    .left{
+        margin-top: 30px;
+    }
+    .footer-section{
+        width: 100%;
+    }
+}
